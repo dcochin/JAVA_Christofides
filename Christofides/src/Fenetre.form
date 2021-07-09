@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Fenetre">
+  <grid id="27dc6" binding="panneau" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="850" height="600"/>
+    </constraints>
+    <properties>
+      <minimumSize width="800" height="600"/>
+      <preferredSize width="800" height="600"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <tabbedpane id="c2bce" binding="tabbedPane1">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="780" height="600"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="f6e3b" layout-manager="GridLayoutManager" row-count="8" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Données"/>
+            </constraints>
+            <properties>
+              <preferredSize width="780" height="600"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="5bf2b" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Ajouter un sommet :"/>
+                </properties>
+              </component>
+              <component id="5d11" class="javax.swing.JButton" binding="bt_AddPoint">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="178" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Ajouter"/>
+                </properties>
+              </component>
+              <component id="f8114" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Ajouter une arête :"/>
+                </properties>
+              </component>
+              <component id="dec4a" class="javax.swing.JButton" binding="bt_AddEdge">
+                <constraints>
+                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="252" height="30"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Ajouter"/>
+                </properties>
+              </component>
+              <component id="560dc" class="javax.swing.JTextField" binding="tF_PointName">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="21f1b" class="javax.swing.JComboBox" binding="cB_PointA">
+                <constraints>
+                  <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="252" height="30"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="9b37c" class="javax.swing.JComboBox" binding="cB_PointB">
+                <constraints>
+                  <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="252" height="30"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="6c612" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Point A :"/>
+                </properties>
+              </component>
+              <component id="f2a2e" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Point B :"/>
+                </properties>
+              </component>
+              <component id="76013" class="javax.swing.JList" binding="list_Edges">
+                <constraints>
+                  <grid row="5" column="2" row-span="1" col-span="2" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="7344" class="javax.swing.JList" binding="list_Points">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <minimum-size width="390" height="-1"/>
+                    <preferred-size width="390" height="150"/>
+                    <maximum-size width="390" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="c7b12" class="javax.swing.JButton" binding="bt_RemovePoint">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <actionCommand value="Supprimer un sommet et ses routes"/>
+                  <text value="Supprimer un sommet"/>
+                </properties>
+              </component>
+              <component id="4327d" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Distance"/>
+                </properties>
+              </component>
+              <component id="cd609" class="javax.swing.JTextField" binding="tF_Distance">
+                <constraints>
+                  <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="252" height="30"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="4f3c7" class="javax.swing.JButton" binding="bt_JeuEssai">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <actionCommand value=""/>
+                  <label value="Jeu d'Essai"/>
+                  <text value="Jeu d'Essai"/>
+                </properties>
+              </component>
+              <component id="c1488" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Liste des arêtes par point selectionné :"/>
+                </properties>
+              </component>
+              <component id="cea01" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Liste des points dans le graphe :"/>
+                </properties>
+              </component>
+              <component id="a35b2" class="javax.swing.JButton" binding="bt_Reset">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Reset"/>
+                </properties>
+              </component>
+              <component id="ced8e" class="javax.swing.JButton" binding="bt_Algo">
+                <constraints>
+                  <grid row="7" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <actionCommand value="Lancer Algorithme"/>
+                  <label value="Lancer Algorithme"/>
+                  <text value="Lancer Algorithme"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="56192" layout-manager="GridLayoutManager" row-count="6" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Résultats"/>
+            </constraints>
+            <properties>
+              <enabled value="true"/>
+              <preferredSize width="780" height="600"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="2653" class="javax.swing.JTextArea" binding="txt_Eulerien">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="25"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="f59a1" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="234" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Liste des points dans l'arbre de poids minimal + couplage parfait :"/>
+                </properties>
+              </component>
+              <component id="db16a" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Liste des arêtes par point sélectionné :"/>
+                </properties>
+              </component>
+              <component id="d0267" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="234" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Circuit Hamiltonien :"/>
+                </properties>
+              </component>
+              <component id="588f5" class="javax.swing.JTextArea" binding="txt_Hamilton">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="25"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="22de0" class="javax.swing.JList" binding="list_PrimEdges">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="390" height="375"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="92d11" class="javax.swing.JList" binding="list_PrimPoints">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="234" height="375"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="7f015" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="234" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Circuit Eulérien :"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+    </children>
+  </grid>
+</form>
